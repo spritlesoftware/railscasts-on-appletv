@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6369E7831C0D1EA800F48E70 /* libVideoKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6369E7821C0D1EA800F48E70 /* libVideoKit.a */; };
+		6369E7871C0D1F7700F48E70 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6369E7861C0D1F7700F48E70 /* SystemConfiguration.framework */; };
+		63A741111BDD2DB0002C6CC7 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 63A741101BDD2DB0002C6CC7 /* libz.tbd */; };
+		63A741131BDD2DB9002C6CC7 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 63A741121BDD2DB9002C6CC7 /* libiconv.tbd */; };
+		63E5AD491BDD0CB5006380E9 /* cmdutils.c in Sources */ = {isa = PBXBuildFile; fileRef = 63E5AC3A1BDD0CB5006380E9 /* cmdutils.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		63E5AD4A1BDD0CB5006380E9 /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E5ACBA1BDD0CB5006380E9 /* libavcodec.a */; };
+		63E5AD4B1BDD0CB5006380E9 /* libavformat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E5ACBB1BDD0CB5006380E9 /* libavformat.a */; };
+		63E5AD4C1BDD0CB5006380E9 /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E5ACBC1BDD0CB5006380E9 /* libavutil.a */; };
+		63E5AD4D1BDD0CB5006380E9 /* libswresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E5ACBD1BDD0CB5006380E9 /* libswresample.a */; };
+		63E5AD4E1BDD0CB5006380E9 /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E5ACBE1BDD0CB5006380E9 /* libswscale.a */; };
+		63E5AD501BDD0CB5006380E9 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E5AD111BDD0CB5006380E9 /* libcrypto.a */; };
+		63E5AD511BDD0CB5006380E9 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E5AD121BDD0CB5006380E9 /* libssl.a */; };
+		63E5AD541BDD0CB5006380E9 /* VKPlayerControllerBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E5AD1A1BDD0CB5006380E9 /* VKPlayerControllerBase.m */; };
+		63E5AD551BDD0CB5006380E9 /* VKPlayerControllerTV.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E5AD1C1BDD0CB5006380E9 /* VKPlayerControllerTV.m */; };
+		63E5AD681BDD0CB5006380E9 /* license-form.plist in Resources */ = {isa = PBXBuildFile; fileRef = 63E5AD3E1BDD0CB5006380E9 /* license-form.plist */; };
+		63E5AD691BDD0CB5006380E9 /* VKPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E5AD421BDD0CB5006380E9 /* VKPlayerViewController.m */; };
+		63E5AD6C1BDD0CB5006380E9 /* VKImages.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 63E5AD481BDD0CB5006380E9 /* VKImages.bundle */; };
+		E43EEF621C71986B00E37F15 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E43EEF521C71986B00E37F15 /* AppDelegate.m */; };
+		E43EEF631C71986B00E37F15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E43EEF531C71986B00E37F15 /* Assets.xcassets */; };
+		E43EEF641C71986B00E37F15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E43EEF541C71986B00E37F15 /* Main.storyboard */; };
+		E43EEF651C71986B00E37F15 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E43EEF561C71986B00E37F15 /* Info.plist */; };
+		E43EEF661C71986B00E37F15 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E43EEF571C71986B00E37F15 /* main.m */; };
+		E43EEF671C71986B00E37F15 /* Movie.m in Sources */ = {isa = PBXBuildFile; fileRef = E43EEF591C71986B00E37F15 /* Movie.m */; };
+		E43EEF681C71986B00E37F15 /* MovieCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E43EEF5B1C71986B00E37F15 /* MovieCollectionViewCell.m */; };
+		E43EEF6A1C71986B00E37F15 /* RestHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = E43EEF5F1C71986B00E37F15 /* RestHandler.m */; };
+		E43EEF6B1C71986B00E37F15 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E43EEF611C71986B00E37F15 /* ViewController.m */; };
+		E48979FA1C6D9DE3003A64AF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6369E7841C0D1F4C00F48E70 /* Security.framework */; };
+		E4FA590A1C71DB8800E3904A /* CollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = E4FA59091C71DB8800E3904A /* CollectionReusableView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6369E7821C0D1EA800F48E70 /* libVideoKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libVideoKit.a; sourceTree = "<group>"; };
+		6369E7841C0D1F4C00F48E70 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		6369E7861C0D1F7700F48E70 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		63A741101BDD2DB0002C6CC7 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		63A741121BDD2DB9002C6CC7 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		63E5ABFD1BD3C152006380E9 /* VideoKitTVSampleTRIAL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoKitTVSampleTRIAL.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63E5AC3A1BDD0CB5006380E9 /* cmdutils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cmdutils.c; sourceTree = "<group>"; };
+		63E5ACBA1BDD0CB5006380E9 /* libavcodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libavcodec.a; sourceTree = "<group>"; };
+		63E5ACBB1BDD0CB5006380E9 /* libavformat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libavformat.a; sourceTree = "<group>"; };
+		63E5ACBC1BDD0CB5006380E9 /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libavutil.a; sourceTree = "<group>"; };
+		63E5ACBD1BDD0CB5006380E9 /* libswresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libswresample.a; sourceTree = "<group>"; };
+		63E5ACBE1BDD0CB5006380E9 /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libswscale.a; sourceTree = "<group>"; };
+		63E5ACC01BDD0CB5006380E9 /* FGThrowSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGThrowSlider.h; sourceTree = "<group>"; };
+		63E5AD111BDD0CB5006380E9 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrypto.a; sourceTree = "<group>"; };
+		63E5AD121BDD0CB5006380E9 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libssl.a; sourceTree = "<group>"; };
+		63E5AD141BDD0CB5006380E9 /* VKReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKReachability.h; sourceTree = "<group>"; };
+		63E5AD191BDD0CB5006380E9 /* VKPlayerControllerBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKPlayerControllerBase.h; sourceTree = "<group>"; };
+		63E5AD1A1BDD0CB5006380E9 /* VKPlayerControllerBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKPlayerControllerBase.m; sourceTree = "<group>"; };
+		63E5AD1B1BDD0CB5006380E9 /* VKPlayerControllerTV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKPlayerControllerTV.h; sourceTree = "<group>"; };
+		63E5AD1C1BDD0CB5006380E9 /* VKPlayerControllerTV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKPlayerControllerTV.m; sourceTree = "<group>"; };
+		63E5AD1E1BDD0CB5006380E9 /* VKAudioDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKAudioDecoder.h; sourceTree = "<group>"; };
+		63E5AD201BDD0CB5006380E9 /* VKAVDecodeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKAVDecodeManager.h; sourceTree = "<group>"; };
+		63E5AD221BDD0CB5006380E9 /* VKClock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKClock.h; sourceTree = "<group>"; };
+		63E5AD241BDD0CB5006380E9 /* VKClockManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKClockManager.h; sourceTree = "<group>"; };
+		63E5AD261BDD0CB5006380E9 /* VKDecodeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKDecodeManager.h; sourceTree = "<group>"; };
+		63E5AD281BDD0CB5006380E9 /* VKDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKDecoder.h; sourceTree = "<group>"; };
+		63E5AD2A1BDD0CB5006380E9 /* VKManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKManager.h; sourceTree = "<group>"; };
+		63E5AD2C1BDD0CB5006380E9 /* VKPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKPacket.h; sourceTree = "<group>"; };
+		63E5AD2E1BDD0CB5006380E9 /* VKQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKQueue.h; sourceTree = "<group>"; };
+		63E5AD301BDD0CB5006380E9 /* VKRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKRecorder.h; sourceTree = "<group>"; };
+		63E5AD321BDD0CB5006380E9 /* VKVideoDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKVideoDecoder.h; sourceTree = "<group>"; };
+		63E5AD341BDD0CB5006380E9 /* VKVideoFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKVideoFrame.h; sourceTree = "<group>"; };
+		63E5AD3E1BDD0CB5006380E9 /* license-form.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "license-form.plist"; sourceTree = "<group>"; };
+		63E5AD411BDD0CB5006380E9 /* VKPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKPlayerViewController.h; sourceTree = "<group>"; };
+		63E5AD421BDD0CB5006380E9 /* VKPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKPlayerViewController.m; sourceTree = "<group>"; };
+		63E5AD441BDD0CB5006380E9 /* VKGLES2View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKGLES2View.h; sourceTree = "<group>"; };
+		63E5AD461BDD0CB5006380E9 /* VKStreamInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKStreamInfoView.h; sourceTree = "<group>"; };
+		63E5AD481BDD0CB5006380E9 /* VKImages.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = VKImages.bundle; sourceTree = "<group>"; };
+		E43EEF511C71986B00E37F15 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E43EEF521C71986B00E37F15 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E43EEF531C71986B00E37F15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E43EEF551C71986B00E37F15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E43EEF561C71986B00E37F15 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E43EEF571C71986B00E37F15 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E43EEF581C71986B00E37F15 /* Movie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Movie.h; sourceTree = "<group>"; };
+		E43EEF591C71986B00E37F15 /* Movie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Movie.m; sourceTree = "<group>"; };
+		E43EEF5A1C71986B00E37F15 /* MovieCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieCollectionViewCell.h; sourceTree = "<group>"; };
+		E43EEF5B1C71986B00E37F15 /* MovieCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieCollectionViewCell.m; sourceTree = "<group>"; };
+		E43EEF5E1C71986B00E37F15 /* RestHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestHandler.h; sourceTree = "<group>"; };
+		E43EEF5F1C71986B00E37F15 /* RestHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestHandler.m; sourceTree = "<group>"; };
+		E43EEF601C71986B00E37F15 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E43EEF611C71986B00E37F15 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E4FA59081C71DB8800E3904A /* CollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CollectionReusableView.h; path = ../CollectionReusableView.h; sourceTree = "<group>"; };
+		E4FA59091C71DB8800E3904A /* CollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CollectionReusableView.m; path = ../CollectionReusableView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		63E5ABFA1BD3C152006380E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E48979FA1C6D9DE3003A64AF /* Security.framework in Frameworks */,
+				6369E7871C0D1F7700F48E70 /* SystemConfiguration.framework in Frameworks */,
+				63A741131BDD2DB9002C6CC7 /* libiconv.tbd in Frameworks */,
+				63A741111BDD2DB0002C6CC7 /* libz.tbd in Frameworks */,
+				63E5AD4D1BDD0CB5006380E9 /* libswresample.a in Frameworks */,
+				63E5AD4E1BDD0CB5006380E9 /* libswscale.a in Frameworks */,
+				63E5AD511BDD0CB5006380E9 /* libssl.a in Frameworks */,
+				63E5AD501BDD0CB5006380E9 /* libcrypto.a in Frameworks */,
+				6369E7831C0D1EA800F48E70 /* libVideoKit.a in Frameworks */,
+				63E5AD4C1BDD0CB5006380E9 /* libavutil.a in Frameworks */,
+				63E5AD4A1BDD0CB5006380E9 /* libavcodec.a in Frameworks */,
+				63E5AD4B1BDD0CB5006380E9 /* libavformat.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		63A741151BDD2EC0002C6CC7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6369E7861C0D1F7700F48E70 /* SystemConfiguration.framework */,
+				6369E7841C0D1F4C00F48E70 /* Security.framework */,
+				63A741121BDD2DB9002C6CC7 /* libiconv.tbd */,
+				63A741101BDD2DB0002C6CC7 /* libz.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		63E5ABF41BD3C152006380E9 = {
+			isa = PBXGroup;
+			children = (
+				E43EEF501C71986B00E37F15 /* TVOSExample */,
+				63E5AC381BDD0CB5006380E9 /* VideoKit */,
+				63A741151BDD2EC0002C6CC7 /* Frameworks */,
+				63E5ABFE1BD3C152006380E9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		63E5ABFE1BD3C152006380E9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63E5ABFD1BD3C152006380E9 /* VideoKitTVSampleTRIAL.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		63E5AC381BDD0CB5006380E9 /* VideoKit */ = {
+			isa = PBXGroup;
+			children = (
+				63E5AC391BDD0CB5006380E9 /* 3rd-party */,
+				63E5AD161BDD0CB5006380E9 /* Controller */,
+				63E5AD1D1BDD0CB5006380E9 /* CORE */,
+				63E5AD3E1BDD0CB5006380E9 /* license-form.plist */,
+				63E5AD401BDD0CB5006380E9 /* ViewController */,
+				63E5AD431BDD0CB5006380E9 /* Views */,
+				63E5AD481BDD0CB5006380E9 /* VKImages.bundle */,
+			);
+			path = VideoKit;
+			sourceTree = "<group>";
+		};
+		63E5AC391BDD0CB5006380E9 /* 3rd-party */ = {
+			isa = PBXGroup;
+			children = (
+				63E5AC3A1BDD0CB5006380E9 /* cmdutils.c */,
+				63E5AC3B1BDD0CB5006380E9 /* ffmpeg */,
+				63E5ACBF1BDD0CB5006380E9 /* FGThrowSlider */,
+				63E5ACC21BDD0CB5006380E9 /* openSSL */,
+				63E5AD131BDD0CB5006380E9 /* Reachability */,
+			);
+			path = "3rd-party";
+			sourceTree = "<group>";
+		};
+		63E5AC3B1BDD0CB5006380E9 /* ffmpeg */ = {
+			isa = PBXGroup;
+			children = (
+				63E5ACB91BDD0CB5006380E9 /* lib */,
+			);
+			path = ffmpeg;
+			sourceTree = "<group>";
+		};
+		63E5ACB91BDD0CB5006380E9 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				63E5ACBA1BDD0CB5006380E9 /* libavcodec.a */,
+				63E5ACBB1BDD0CB5006380E9 /* libavformat.a */,
+				63E5ACBC1BDD0CB5006380E9 /* libavutil.a */,
+				63E5ACBD1BDD0CB5006380E9 /* libswresample.a */,
+				63E5ACBE1BDD0CB5006380E9 /* libswscale.a */,
+			);
+			name = lib;
+			path = "../../../videokit/3rd-party/ffmpeg/lib-tvos";
+			sourceTree = "<group>";
+		};
+		63E5ACBF1BDD0CB5006380E9 /* FGThrowSlider */ = {
+			isa = PBXGroup;
+			children = (
+				63E5ACC01BDD0CB5006380E9 /* FGThrowSlider.h */,
+			);
+			path = FGThrowSlider;
+			sourceTree = "<group>";
+		};
+		63E5ACC21BDD0CB5006380E9 /* openSSL */ = {
+			isa = PBXGroup;
+			children = (
+				63E5AD101BDD0CB5006380E9 /* lib */,
+			);
+			path = openSSL;
+			sourceTree = "<group>";
+		};
+		63E5AD101BDD0CB5006380E9 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				63E5AD111BDD0CB5006380E9 /* libcrypto.a */,
+				63E5AD121BDD0CB5006380E9 /* libssl.a */,
+			);
+			name = lib;
+			path = "../../../videokit/3rd-party/openSSL/lib-tvos";
+			sourceTree = "<group>";
+		};
+		63E5AD131BDD0CB5006380E9 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				63E5AD141BDD0CB5006380E9 /* VKReachability.h */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		63E5AD161BDD0CB5006380E9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				63E5AD191BDD0CB5006380E9 /* VKPlayerControllerBase.h */,
+				63E5AD1A1BDD0CB5006380E9 /* VKPlayerControllerBase.m */,
+				63E5AD1B1BDD0CB5006380E9 /* VKPlayerControllerTV.h */,
+				63E5AD1C1BDD0CB5006380E9 /* VKPlayerControllerTV.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		63E5AD1D1BDD0CB5006380E9 /* CORE */ = {
+			isa = PBXGroup;
+			children = (
+				6369E7821C0D1EA800F48E70 /* libVideoKit.a */,
+				63E5AD1E1BDD0CB5006380E9 /* VKAudioDecoder.h */,
+				63E5AD201BDD0CB5006380E9 /* VKAVDecodeManager.h */,
+				63E5AD221BDD0CB5006380E9 /* VKClock.h */,
+				63E5AD241BDD0CB5006380E9 /* VKClockManager.h */,
+				63E5AD261BDD0CB5006380E9 /* VKDecodeManager.h */,
+				63E5AD281BDD0CB5006380E9 /* VKDecoder.h */,
+				63E5AD2A1BDD0CB5006380E9 /* VKManager.h */,
+				63E5AD2C1BDD0CB5006380E9 /* VKPacket.h */,
+				63E5AD2E1BDD0CB5006380E9 /* VKQueue.h */,
+				63E5AD301BDD0CB5006380E9 /* VKRecorder.h */,
+				63E5AD321BDD0CB5006380E9 /* VKVideoDecoder.h */,
+				63E5AD341BDD0CB5006380E9 /* VKVideoFrame.h */,
+			);
+			path = CORE;
+			sourceTree = "<group>";
+		};
+		63E5AD401BDD0CB5006380E9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				63E5AD411BDD0CB5006380E9 /* VKPlayerViewController.h */,
+				63E5AD421BDD0CB5006380E9 /* VKPlayerViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		63E5AD431BDD0CB5006380E9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				63E5AD441BDD0CB5006380E9 /* VKGLES2View.h */,
+				63E5AD461BDD0CB5006380E9 /* VKStreamInfoView.h */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E43EEF501C71986B00E37F15 /* TVOSExample */ = {
+			isa = PBXGroup;
+			children = (
+				E43EEF511C71986B00E37F15 /* AppDelegate.h */,
+				E43EEF521C71986B00E37F15 /* AppDelegate.m */,
+				E4FA590E1C71F4D600E3904A /* RestHandler */,
+				E4FA590D1C71F4BC00E3904A /* HeaderView */,
+				E4FA590C1C71F49400E3904A /* CollectionView */,
+				E4FA590B1C71F47500E3904A /* Controllers */,
+				E43EEF531C71986B00E37F15 /* Assets.xcassets */,
+				E43EEF541C71986B00E37F15 /* Main.storyboard */,
+				E43EEF561C71986B00E37F15 /* Info.plist */,
+				E43EEF571C71986B00E37F15 /* main.m */,
+			);
+			path = TVOSExample;
+			sourceTree = "<group>";
+		};
+		E4FA590B1C71F47500E3904A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E43EEF601C71986B00E37F15 /* ViewController.h */,
+				E43EEF611C71986B00E37F15 /* ViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		E4FA590C1C71F49400E3904A /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				E43EEF591C71986B00E37F15 /* Movie.m */,
+				E43EEF581C71986B00E37F15 /* Movie.h */,
+				E43EEF5A1C71986B00E37F15 /* MovieCollectionViewCell.h */,
+				E43EEF5B1C71986B00E37F15 /* MovieCollectionViewCell.m */,
+			);
+			name = CollectionView;
+			sourceTree = "<group>";
+		};
+		E4FA590D1C71F4BC00E3904A /* HeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				E4FA59091C71DB8800E3904A /* CollectionReusableView.m */,
+				E4FA59081C71DB8800E3904A /* CollectionReusableView.h */,
+			);
+			name = HeaderView;
+			sourceTree = "<group>";
+		};
+		E4FA590E1C71F4D600E3904A /* RestHandler */ = {
+			isa = PBXGroup;
+			children = (
+				E43EEF5F1C71986B00E37F15 /* RestHandler.m */,
+				E43EEF5E1C71986B00E37F15 /* RestHandler.h */,
+			);
+			name = RestHandler;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		63E5ABFC1BD3C152006380E9 /* VideoKitTVSampleTRIAL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63E5AC141BD3C152006380E9 /* Build configuration list for PBXNativeTarget "VideoKitTVSampleTRIAL" */;
+			buildPhases = (
+				63E5ABF91BD3C152006380E9 /* Sources */,
+				63E5ABFA1BD3C152006380E9 /* Frameworks */,
+				63E5ABFB1BD3C152006380E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VideoKitTVSampleTRIAL;
+			productName = VideoKitTVSample;
+			productReference = 63E5ABFD1BD3C152006380E9 /* VideoKitTVSampleTRIAL.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		63E5ABF51BD3C152006380E9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Murat Sudan";
+				TargetAttributes = {
+					63E5ABFC1BD3C152006380E9 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+				};
+			};
+			buildConfigurationList = 63E5ABF81BD3C152006380E9 /* Build configuration list for PBXProject "railscasts-on-appletv" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 63E5ABF41BD3C152006380E9;
+			productRefGroup = 63E5ABFE1BD3C152006380E9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				63E5ABFC1BD3C152006380E9 /* VideoKitTVSampleTRIAL */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		63E5ABFB1BD3C152006380E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63E5AD6C1BDD0CB5006380E9 /* VKImages.bundle in Resources */,
+				E43EEF631C71986B00E37F15 /* Assets.xcassets in Resources */,
+				63E5AD681BDD0CB5006380E9 /* license-form.plist in Resources */,
+				E43EEF651C71986B00E37F15 /* Info.plist in Resources */,
+				E43EEF641C71986B00E37F15 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		63E5ABF91BD3C152006380E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E43EEF6A1C71986B00E37F15 /* RestHandler.m in Sources */,
+				63E5AD541BDD0CB5006380E9 /* VKPlayerControllerBase.m in Sources */,
+				63E5AD491BDD0CB5006380E9 /* cmdutils.c in Sources */,
+				E43EEF671C71986B00E37F15 /* Movie.m in Sources */,
+				E4FA590A1C71DB8800E3904A /* CollectionReusableView.m in Sources */,
+				E43EEF6B1C71986B00E37F15 /* ViewController.m in Sources */,
+				E43EEF681C71986B00E37F15 /* MovieCollectionViewCell.m in Sources */,
+				63E5AD691BDD0CB5006380E9 /* VKPlayerViewController.m in Sources */,
+				63E5AD551BDD0CB5006380E9 /* VKPlayerControllerTV.m in Sources */,
+				E43EEF661C71986B00E37F15 /* main.m in Sources */,
+				E43EEF621C71986B00E37F15 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E43EEF541C71986B00E37F15 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E43EEF551C71986B00E37F15 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		63E5AC121BD3C152006380E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		63E5AC131BD3C152006380E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		63E5AC151BD3C152006380E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
+				HEADER_SEARCH_PATHS = (
+					"./VideoKit/3rd-party/ffmpeg/include-tvos/",
+					"./VideoKit/3rd-party/openSSL/include-tvos/",
+				);
+				INFOPLIST_FILE = TVOSExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"./VideoKit/3rd-party/ffmpeg/lib-tvos",
+					"./VideoKit/3rd-party/openSSL/lib-tvos",
+					"$(PROJECT_DIR)/VideoKit/CORE",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Railscasts-on-appletv";
+				PRODUCT_NAME = VideoKitTVSampleTRIAL;
+				PROVISIONING_PROFILE = "";
+				VALID_ARCHS = arm64;
+			};
+			name = Debug;
+		};
+		63E5AC161BD3C152006380E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
+				HEADER_SEARCH_PATHS = (
+					"./VideoKit/3rd-party/ffmpeg/include-tvos/",
+					"./VideoKit/3rd-party/openSSL/include-tvos/",
+				);
+				INFOPLIST_FILE = TVOSExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"./VideoKit/3rd-party/ffmpeg/lib-tvos",
+					"./VideoKit/3rd-party/openSSL/lib-tvos",
+					"$(PROJECT_DIR)/VideoKit/CORE",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Railscasts-on-appletv";
+				PRODUCT_NAME = VideoKitTVSampleTRIAL;
+				PROVISIONING_PROFILE = "";
+				VALID_ARCHS = arm64;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		63E5ABF81BD3C152006380E9 /* Build configuration list for PBXProject "railscasts-on-appletv" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63E5AC121BD3C152006380E9 /* Debug */,
+				63E5AC131BD3C152006380E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63E5AC141BD3C152006380E9 /* Build configuration list for PBXNativeTarget "VideoKitTVSampleTRIAL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63E5AC151BD3C152006380E9 /* Debug */,
+				63E5AC161BD3C152006380E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 63E5ABF51BD3C152006380E9 /* Project object */;
+}
