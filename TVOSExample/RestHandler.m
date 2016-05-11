@@ -10,7 +10,7 @@
 #import "Movie.h"
 
 
-#define FEED_URL @"http://nicoli.moddo.spritle.com/tvos/json/rails_cast.json"
+#define FEED_URL @"https://www.spritle.com/tvOS/json/rails_casts.json"
 @implementation RestHandler
 
 + (instancetype)sharedInstance {
